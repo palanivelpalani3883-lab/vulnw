@@ -1,0 +1,34 @@
+[
+  {
+    "id": "profile_a",
+    "organisation": "ABC College",
+    "service": "Student Portal",
+    "exposure": "Internet-facing",
+    "importance": "Critical",
+    "$schema_description": "Profile fields include risk_appetite, critical_products, and weight_modifiers.criticality_multiplier; critical products receive the configured score multiplier.",
+    "risk_appetite": "Standard",
+    "critical_products": ["Apache HTTP Server", "MySQL"],
+    "weight_modifiers": {"criticality_multiplier": 1.2},
+    "technologies": [
+      {"product": "Apache HTTP Server", "version": "2.4"},
+      {"product": "MySQL", "version": "8.0"},
+      {"product": "Windows Server", "version": "2019"}
+    ]
+  },
+  {
+    "id": "profile_b",
+    "organisation": "Apex Manufacturing",
+    "service": "Internal Production Line",
+    "exposure": "Internal",
+    "importance": "Critical",
+    "$schema_description": "Profile fields include risk_appetite, critical_products, and weight_modifiers.criticality_multiplier; critical products receive the configured score multiplier.",
+    "risk_appetite": "Standard",
+    "critical_products": ["Windows Server", "Cisco IOS"],
+    "weight_modifiers": {"criticality_multiplier": 1.2},
+    "technologies": [
+      {"product": "Windows Server", "version": "2019"},
+      {"product": "Cisco IOS", "version": "15.2"},
+      {"product": "MySQL", "version": "8.0"}
+    ]
+  }
+]
